@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Post">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_an_image"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="325dp"
+        android:layout_height="325dp"
+        android:contentDescription="@string/todo"
+        android:onClick="chooseImage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.018"
+        app:srcCompat="@drawable/ic_baseline_add_a_photo_24" />
+
+    <EditText
+        android:id="@+id/descEditText"
+        android:layout_width="320dp"
+        android:layout_height="75dp"
+        android:background="@drawable/shapetwo"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="@string/description"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:singleLine="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.519"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:background="@drawable/shapetwo"
+        android:ems="10"
+        android:hint="@string/title"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.536"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/editTextPrice"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/shapetwo"
+        android:ems="10"
+        android:hint="@string/price"
+        android:inputType="number"
+        android:paddingStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTitle"
+        app:layout_constraintVertical_bias="0.106"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/editTextCity"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/shapetwo"
+        android:ems="10"
+        android:hint="@string/city"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.164"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descEditText"
+        app:layout_constraintVertical_bias="0.323"
+        tools:ignore="RtlSymmetry" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/shapetwo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextPrice"
+        app:layout_constraintHorizontal_bias="0.661"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTitle"
+        app:layout_constraintVertical_bias="0.109" />
+
+    <Button
+        android:id="@+id/uploadButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/shapeone"
+        android:text="@string/upload"
+        android:textColor="@color/white"
+        app:icon="@drawable/ic_baseline_cloud_upload_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descEditText"
+        app:layout_constraintVertical_bias="0.323"
+        app:strokeColor="#B39E9E" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

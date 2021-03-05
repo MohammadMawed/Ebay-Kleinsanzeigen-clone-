@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shapetwo">
+
+    <ImageView
+        android:id="@+id/image_single_view"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shapetwo_custom"
+        android:contentDescription="@string/todo"
+        android:padding="4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_baseline_image_24" />
+
+    <TextView
+        android:id="@+id/title_single_View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="@string/title"
+        android:textColor="@color/black"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/time_single_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="@string/time"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@+id/price"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/city"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/title_single_View"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/price"
+        android:textColor="@color/Green"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
